@@ -1,0 +1,16 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.5
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.projectlombok:lombok:1.16.4"
+    testCompile 'org.testng:testng:6.8.7'
+    testCompile 'org.mockito:mockito-all:1.9.5'
+    testCompile 'org.hamcrest:hamcrest-all:1.3'
+}
