@@ -1,7 +1,11 @@
-import junit.framework.TestCase;
+import org.testng.annotations.Test;
 
-public class CustomerTest extends TestCase {
-    public void testName() throws Exception {
+import static org.testng.Assert.assertEquals;
+
+public class CustomerTest {
+
+    @Test
+    public void compileTest() throws Exception {
         Customer customer = new Customer("Douglas");
         assertEquals(customer.getName(), "Douglas");
     }
